@@ -1,0 +1,55 @@
+WS FINALS
+
+
+What typically I need to configure?
+Clients
+	hostname (sed and hostnamectl)
+	static ip
+		ntp
+		dns
+		gateway
+	Join AD domain
+
+Server
+	hostname (sed and hostnamectl)
+	static ip
+		ntp
+		dns
+		gateway
+	routes
+	dns server
+	dhcp server
+	ntp server
+	ad server
+	file share (smb, nfs, iscsi)
+	vpn
+
+
+
+
+TO REPEATE
+	Ansible Jinja templates
+	Some Dockerfile and docker-compose
+
+
+
+
+#DONE NEED TO TEST
+
+What I need to easily configure servers?
+Master-server with:
+	byobu (with my config)
+	ssh
+	fileserver (sftp mount!!! and samba for windows )
+Servers with:
+	root ssh access (custom config)
+	no password auth (ssh-copy-id)
+	one network (in vm settings)
+	micro editor if possible
+	auto mount network folder from Master
+	config to remove it
+	Scripts need to be configured with ENV varibales!!!!!, so script to set them up
+
+So I will connect from host to master server, run byobu and connect to other hosts.
++ clipboard
++ byobu
